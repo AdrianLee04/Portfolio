@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Lee's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .content-section {
+            padding: 20px;
+        }
+
+        .contact-button {
+            background-color: #1D4ED8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #2563EB;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #1D4ED8;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .profile-image {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .reference {
+            border-left: 4px solid #1D4ED8;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .reference p {
+            margin: 0;
+        }
+
+        .reference a {
+            color: #1D4ED8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .reference a:hover {
+            color: #2563EB;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        <div class="flex items-center">
+            <img src="image.png" alt="Adrian Lee" class="w-32 h-32 rounded-full mr-6 profile-image">
+            <div>
+                <h1 class="text-4xl font-bold">Adrian Lee</h1>
+                <p class="mt-2 text-gray-600">IT Support Specialist & Software Engineering Student</p>
+            </div>
+        </div>
+
+        <div class="content-section mt-8">
+            <button onclick="contactMe('60182904479')" class="contact-button">Contact Me</button>
+        </div>
+
+        <div class="content-section mt-8">
+            <h2 class="text-2xl font-bold section-title">Education</h2>
+            <div class="mt-4">
+                <p class="text-lg font-semibold">Diploma in ICT Specialism in Software Engineering</p>
+                <p>Asia Pacific University's (2022-2024)</p>
+                <p>CGPA: 3.43</p>
+            </div>
+            <div class="mt-4">
+                <p class="text-lg font-semibold">Sijil Pelajaran Malaysia</p>
+                <p>SMK Taman Connaught (2017-2021)</p>
+                <p>Result: 1 A's</p>
+            </div>
+        </div>
+
+        <div class="content-section mt-8">
+            <h2 class="text-2xl font-bold section-title">Skills</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li>Beginner Programming Languages</li>
+                <li>Communication</li>
+                <li>Problem-Solving</li>
+                <li>Teamwork</li>
+                <li>Editing Video</li>
+            </ul>
+        </div>
+
+        <div class="content-section mt-8">
+            <h2 class="text-2xl font-bold section-title">Work Experience</h2>
+
+            <div class="mt-6">
+                <h3 class="text-lg font-semibold">IT Support (Part Time) - Pets Family | PJ</h3>
+                <p class="text-gray-600">2021 - 2023</p>
+                <p class="mt-2 text-gray-700">Driven Software Engineering student with hands-on IT support experience at Pet Family, troubleshooting hardware/software issues, optimizing network infrastructure, and building customer satisfaction.</p>
+            </div>
+
+            <div class="mt-6">
+                <h3 class="text-lg font-semibold">IT Support (Part Time) - The Pet’s Shop | Kelana Jaya</h3>
+                <p class="text-gray-600">2021 - 2023</p>
+                <p class="mt-2 text-gray-700">Seasoned IT support professional with a passion for customer satisfaction, I bring a proven track record of efficiency and resilience from Pernot Rekat Malaysia, a high-volume alcoholic beverage distributor. My expertise in troubleshooting, network optimization, and proactive maintenance reduced support tickets, while migrating to a new cloud POS system boosted data processing. I thrive in dynamic environments and excel at building strong relationships, making me a valuable asset to any team.</p>
+            </div>
+
+            <div class="mt-6">
+                <h3 class="text-lg font-semibold">IT Support (Part Time) - EJ Trading | Kuala Lumpur</h3>
+                <p class="text-gray-600">2021 - 2023</p>
+                <p class="mt-2 text-gray-700">Tech-savvy and customer-centric IT Support Specialist at EJ Trading, a leading online keyboard retailer. Adept at troubleshooting and optimizing e-commerce systems, I ensure smooth operations and delighted customers. My dedication to proactive maintenance and clear communication has boosted customer satisfaction and streamlined online workflows.</p>
+            </div>
+        </div>
+
+        <div class="content-section mt-8">
+            <h2 class="text-2xl font-bold section-title">References</h2>
+            <div class="mt-4 reference">
+                <p><strong>Darren</strong></p>
+                <p>Head of Online Sales Department</p>
+                <p>Phone: <a href="javascript:void(0);" onclick="contactMe('60169102516')">+60 16-910-2516</a></p>
+                <p>Email: <a href="mailto:darren963@gmail.com">darren963@gmail.com</a></p>
+            </div>
+            <div class="mt-4 reference">
+                <p><strong>Sunny Pang</strong></p>
+                <p>Head of Sales Department</p>
+                <p>Phone: <a href="javascript:void(0);" onclick="contactMe('60132311784')">+60 13-231-1784</a></p>
+                <p>Email: <a href="mailto:sunnypang@gmail.com">sunnypang@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="content-section mt-8">
+            <h2 class="text-2xl font-bold section-title">My Video Projects</h2>
+            <ul class="list-disc pl-6 mt-2">
+                <li><a href="https://www.instagram.com/reel/C52_9mNvGg6/?igshid=MzRlODBiNWFlZA==" class="text-blue-500 hover:text-blue-700" target="_blank">Instagram Reel 1</a></li>
+                <li><a href="https://www.instagram.com/reel/C4IVdUpvJDW/?igshid=MzRlODBiNWFlZA==" class="text-blue-500 hover:text-blue-700" target="_blank">Instagram Reel 2</a></li>
+                <li><a href="https://www.instagram.com/reel/C0vm5wLvPTw/?igshid=MzRlODBiNWFlZA==" class="text-blue-500 hover:text-blue-700" target="_blank">Instagram Reel 3</a></li>
+                <li><a href="https://www.instagram.com/reel/C6p53mYvn8W/?igshid=MzRlODBiNWFlZA==" class="text-blue-500 hover:text-blue-700" target="_blank">Instagram Reel 4</a></li>
+            </ul>
+        </div>
+
+        <div class="content-section mt-8">
+            <h2 class="text-2xl font-bold section-title">Social Media</h2>
+            <p class="mt-2">I am also one of the persons in charge of the Instagram account <a href="https://www.instagram.com/moriah_miners?igshid=MzRlODBiNWFlZA==" class="text-blue-500 hover:text-blue-700" target="_blank">@moriah_miners</a>, and most of the posters on this account are created by me.</p>
+        </div>
+    </div>
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
+    </head>
+    
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
